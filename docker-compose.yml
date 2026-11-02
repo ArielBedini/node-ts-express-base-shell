@@ -1,0 +1,26 @@
+# services:
+#   mongodb:
+#     image: mongo:7.0.31
+#     container_name: user_modngodb
+#     restart: always
+#     environment:
+#       MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER}
+#       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_USER_PASSWORD}
+#     volumes:
+#       - ./mongodb:/data/db
+#     ports:
+#       - "27017:27017"
+
+  # postgresdb:
+  #   image: postgres:18
+  #   container_name: todo_postgresql
+  #   restart: always
+  #   environment:
+  #     POSTGRES_USER: ${POSTGRES_USER}
+  #     POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+  #     POSTGRES_DB: ${POSTGRES_DB}
+  #   volumes:
+  #     - ./postgresdb:/var/lib/postgresql/18/docker
+  #   ports:
+  #     - "5432:5432"
+
